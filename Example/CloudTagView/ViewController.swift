@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         cloudView.frame = CGRectMake(0, 20, view.frame.width, 10)
-        //cloudView.delegate = self
+        cloudView.delegate = self
+        //cloudView.backgroundColor = UIColor.blueColor()
+        
         view.addSubview(cloudView)
         
         addingNormalTags()

@@ -13,6 +13,7 @@ public class CloudTagView: UIView {
     public weak var delegate : TagViewDelegate?
     
     public var removeOnDismiss = true
+    public var resizeToFit = true
     
     public var tags = [TagView](){
         didSet {
@@ -34,12 +35,14 @@ public class CloudTagView: UIView {
         super.init(frame: frame)
         
         userInteractionEnabled = true
+        clipsToBounds = true
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         userInteractionEnabled = true
+        clipsToBounds = true
     }
     
     public override func layoutSubviews() {
@@ -78,6 +81,10 @@ public class CloudTagView: UIView {
             addSubview(tag)
             tag.layoutIfNeeded()
             xAxis += Int(tag.frame.width) + padding
+        }
+        
+        if resizeToFit {
+            frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, CGFloat(yAxis+maxHeight+padding))
         }
     }
     
