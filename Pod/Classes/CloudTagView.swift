@@ -105,7 +105,7 @@ public class TagView: UIView {
             layoutSubviews()
         }
     }
-    public var iconImage = UIImage(named: "close_tag_2") {
+    public var iconImage = UIImage(named: "close_tag_2", inBundle: NSBundle(forClass: CloudTagView.self), compatibleWithTraitCollection: nil) {
         didSet {
             layoutSubviews()
         }
