@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'CloudTagView_Example', :exclusive => true do
+  pod 'CloudTagView', :path => '../'
+end
+
+target 'CloudTagView_Tests', :exclusive => true do
+  pod 'CloudTagView', :path => '../'
+
+  
+end
