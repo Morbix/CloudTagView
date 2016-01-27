@@ -57,6 +57,8 @@ class ViewController: UIViewController {
 }
 ```
 
+<p align="center"><img src ="https://github.com/Morbix/CloudTagView/raw/master/Screenshot.png" /></p>
+
 ## Author
 
 Henrique Morbin, morbin_@hotmail.com
