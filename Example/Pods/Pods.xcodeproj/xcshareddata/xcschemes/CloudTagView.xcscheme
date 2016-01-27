@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3A071C44765C3B5B0A18DB37'
+               BlueprintIdentifier = 'C4974AB37AB8E072FF596E5E'
                BlueprintName = 'CloudTagView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CloudTagView.framework'>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CloudTagView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,56 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x78-Dc-WCc">
+                                <rect key="frame" x="179" y="273" width="242" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Lo-0O-Onf"/>
+                                    <constraint firstAttribute="width" constant="242" id="KdI-aC-F79"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-9b-by8">
+                                <rect key="frame" x="429" y="273" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="2pn-4i-mmu"/>
+                                    <constraint firstAttribute="height" constant="30" id="FUa-1M-X5c"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ACh-QR-MMF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-zG-Tag">
+                                <rect key="frame" x="247" y="235" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="idl-gl-lnZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="r8N-wr-p4l"/>
+                                </constraints>
+                                <state key="normal" title="Clear All"/>
+                                <connections>
+                                    <action selector="clearAllTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="36b-8k-33v"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xdR-zG-Tag" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-50" id="8bR-0C-tor"/>
+                            <constraint firstItem="ygd-9b-by8" firstAttribute="leading" secondItem="x78-Dc-WCc" secondAttribute="trailing" constant="8" id="CGM-d6-Qyh"/>
+                            <constraint firstItem="x78-Dc-WCc" firstAttribute="top" secondItem="xdR-zG-Tag" secondAttribute="bottom" constant="8" id="dul-q3-WUT"/>
+                            <constraint firstItem="ygd-9b-by8" firstAttribute="centerY" secondItem="x78-Dc-WCc" secondAttribute="centerY" id="iZt-b7-XSD"/>
+                            <constraint firstItem="x78-Dc-WCc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nzD-gf-1mZ"/>
+                            <constraint firstItem="xdR-zG-Tag" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="oSD-1n-1TZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addTextField" destination="x78-Dc-WCc" id="kaf-dB-2ku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="418"/>
         </scene>
     </scenes>
 </document>

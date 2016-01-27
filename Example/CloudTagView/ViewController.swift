@@ -13,12 +13,14 @@ class ViewController: UIViewController {
 
     let cloudView = CloudTagView()
     
+    @IBOutlet weak var addTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         cloudView.frame = CGRectMake(0, 20, view.frame.width, 10)
-        cloudView.delegate = self
+        //cloudView.delegate = self
         view.addSubview(cloudView)
         
         addingNormalTags()
@@ -52,12 +54,22 @@ class ViewController: UIViewController {
         longTag.marginLeft = 40
         cloudView.tags.append(longTag)
         
-        let trimmedTag = TagView(text: "This tag is a example of tag with a huge text.")
-        trimmedTag.maxLength = 10
+        let trimmedTag = TagView(text: "Trimmed: This tag is a example of tag with a huge text.")
+        trimmedTag.maxLength = 15
         cloudView.tags.append(trimmedTag)
         
         let otherNormalTag = TagView(text: "other normal tag")
         cloudView.tags.append(otherNormalTag)
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func clearAllTouched(sender: AnyObject) {
+        cloudView.tags.removeAll()
+    }
+    
+    @IBAction func addTouched(sender: AnyObject) {
+        cloudView.tags.append(TagView(text: addTextField.text!))
     }
 }
 

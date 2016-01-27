@@ -32,10 +32,14 @@ public class CloudTagView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        userInteractionEnabled = true
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        userInteractionEnabled = true
     }
     
     public override func layoutSubviews() {
@@ -128,6 +132,8 @@ public class TagView: UIView {
         
         super.init(frame: frame)
         
+        userInteractionEnabled = true
+        
         addSubview(textLabel)
         addSubview(icon)
         addSubview(dismissView)
@@ -150,6 +156,8 @@ public class TagView: UIView {
         textLabel = UILabel()
         
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        
+        userInteractionEnabled = true
         
         addSubview(textLabel)
         addSubview(icon)
