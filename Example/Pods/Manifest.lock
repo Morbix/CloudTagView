@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CloudTagView: 8c518595dd71bc36ebd372a8802269ed12471861
+  CloudTagView: 05a766b7aeb9e8d9634bdbd2e5f033559f143fda
 
 COCOAPODS: 0.39.0

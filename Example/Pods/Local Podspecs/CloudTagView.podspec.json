@@ -16,6 +16,7 @@
     "ios": "8.0"
   },
   "requires_arc": true,
+  "resources": "Pod/Assets/Media.xcassets",
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "CloudTagView": [

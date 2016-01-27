@@ -196,11 +196,11 @@ public class TagView: UIView {
     
     // MARK: Actions 
     
-    private func iconTapped(){
+    func iconTapped(){
         delegate?.tagDismissed?(self)
     }
     
-    private func labelTapped(){
+    func labelTapped(){
         delegate?.tagTouched?(self)
     }
 }

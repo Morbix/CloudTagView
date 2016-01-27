@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C2961EC0C46F0D752AB5A49DE9CAD07 /* CloudTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CAE3532BC9AF5040775E67B4E2FA3 /* CloudTagView.swift */; };
-		2DA7462B1C58FD03009B0EC4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA7462A1C58FD03009B0EC4 /* Media.xcassets */; };
-		5009CFFBBA46E1E38027F4B36A8E49F3 /* CloudTagView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6678CBEBE78AF5DD994D0497CAFEC3E9 /* CloudTagView-dummy.m */; };
+		1DE5A3E3BB7EFCE1B6C515A036FFD4E2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2626F371F148BF573AB55FAE556B620F /* Media.xcassets */; };
+		332CB5853BBAB890DEE8FE775A315DB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		72593D7236700ABFC16DDB560D80332B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		782F73DA066414B1D7A2551693E91F33 /* Pods-CloudTagView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B85FEE8EF26EB6456337142D7024E82 /* Pods-CloudTagView_Tests-dummy.m */; };
-		9ADF3DCB1A227543F79E4595EFC19DF4 /* CloudTagView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 916A45EFB5984B859743DD23412EF965 /* CloudTagView.bundle */; };
-		AFAC6288D81CFD9125EF0E26239B9786 /* CloudTagView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FAF40CB1A052DFB9698C4BABC788860 /* CloudTagView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8405D40D9220597B8F955CB2A405CD54 /* CloudTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99218D9DC27409FC4C8E8BACDE3F1349 /* CloudTagView.swift */; };
+		895895B2E9DAE90C6E3B39E5CE900FEF /* CloudTagView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B18B2BF641C7098B71268CD9E62002 /* CloudTagView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95AF7FD768ECD8B3F99C1B52C69D0A12 /* CloudTagView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 916A45EFB5984B859743DD23412EF965 /* CloudTagView.bundle */; };
 		C65F2DBB1C292AD4606A8F34ADF2E6D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		CF0769451D19548204DB14AD0B33B538 /* Pods-CloudTagView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 926BDA206A3B465139BF3F91CDAFF2C1 /* Pods-CloudTagView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3F14115D484F5ECACA8C1F2410EEEFC /* Pods-CloudTagView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51AB9B85D8EBC48DE6F171596D7CF3C2 /* Pods-CloudTagView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F47B537AF9E3C0520D47311D3B74A02A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ED5EC5BE59562E245B835DD948285677 /* CloudTagView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FCC4218DACED30062F3E583438581E /* CloudTagView-dummy.m */; };
 		F99D557B8B1F1D022DE004A9AC3A6909 /* Pods-CloudTagView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 163F47498EF9889AD2CC8CE8F8E3A4D1 /* Pods-CloudTagView_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B03DB663A003199E5A4954987AF4A0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4CFBBA61AB7603AB2B9DEE538695FA9;
-			remoteInfo = "CloudTagView-CloudTagView";
-		};
 		4CCEEFD4CE523415727C8EB76C328DF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7FC858EF2772BBF7DE1DA525057611C9;
+			remoteGlobalIDString = 43BC3D4FFE8A835F4B2C5B2F4AE3472D;
 			remoteInfo = CloudTagView;
+		};
+		C1A4DBB8029C3D6A9A3E043B145DE4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB54F84A6C814CAEDB71E34CF9F8C18E;
+			remoteInfo = "CloudTagView-CloudTagView";
 		};
 		D92B44028F1730ADBC9946362B8C9D79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7FC858EF2772BBF7DE1DA525057611C9;
+			remoteGlobalIDString = 43BC3D4FFE8A835F4B2C5B2F4AE3472D;
 			remoteInfo = CloudTagView;
 		};
 /* End PBXContainerItemProxy section */
@@ -50,21 +50,18 @@
 		163F47498EF9889AD2CC8CE8F8E3A4D1 /* Pods-CloudTagView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudTagView_Example-dummy.m"; sourceTree = "<group>"; };
 		16EE78D71BDAA61419D6E74160075298 /* Pods-CloudTagView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudTagView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1B85FEE8EF26EB6456337142D7024E82 /* Pods-CloudTagView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudTagView_Tests-dummy.m"; sourceTree = "<group>"; };
+		2626F371F148BF573AB55FAE556B620F /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		26BAF1379F1D7B4DFE8DB5F30F8FE798 /* Pods-CloudTagView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CloudTagView_Example.modulemap"; sourceTree = "<group>"; };
+		2CFE0B3F42792F69B1DE6C50821E079A /* CloudTagView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudTagView-prefix.pch"; sourceTree = "<group>"; };
 		2D02194752DA32AC9CF19FD547465984 /* Pods_CloudTagView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudTagView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA7462A1C58FD03009B0EC4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2F864CD7630E84154C2D15A8AB8C67EB /* Pods-CloudTagView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudTagView_Tests-resources.sh"; sourceTree = "<group>"; };
 		3274F560A7B11613BBE7DE26288EB4CF /* Pods-CloudTagView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CloudTagView_Tests.modulemap"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudTagView.xcconfig; sourceTree = "<group>"; };
+		494CA6BE019D6275FD0D8F3FC2F6FC91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51AB9B85D8EBC48DE6F171596D7CF3C2 /* Pods-CloudTagView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudTagView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		59CFCA08802090CA5398CF5CD442EDDB /* Pods-CloudTagView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudTagView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		61D79B9C56E826949EF151B92D73142E /* CloudTagView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudTagView-prefix.pch"; sourceTree = "<group>"; };
-		6678CBEBE78AF5DD994D0497CAFEC3E9 /* CloudTagView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CloudTagView-dummy.m"; sourceTree = "<group>"; };
 		688068892C1BDEBDC82930B71674BA58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CF6275887AFA94E8680AB8F7825485A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703799E0681C269246141984421B9F91 /* Pods-CloudTagView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudTagView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7930014E8C3E48419E6C0D03382DCE0B /* CloudTagView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CloudTagView.modulemap; sourceTree = "<group>"; };
 		859EFB435847A0DD2C6CD846E5663E57 /* CloudTagView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudTagView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F25ABF07582F60B00CA5432C9A06450 /* Pods-CloudTagView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudTagView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		916A45EFB5984B859743DD23412EF965 /* CloudTagView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudTagView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,22 +69,32 @@
 		926BDA206A3B465139BF3F91CDAFF2C1 /* Pods-CloudTagView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudTagView_Example-umbrella.h"; sourceTree = "<group>"; };
 		942146C4E0212AEE4628B8EF8D695854 /* Pods-CloudTagView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudTagView_Example-resources.sh"; sourceTree = "<group>"; };
 		991C9F98616D6C06144E31457E4C3609 /* Pods-CloudTagView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudTagView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9FAF40CB1A052DFB9698C4BABC788860 /* CloudTagView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudTagView-umbrella.h"; sourceTree = "<group>"; };
+		99218D9DC27409FC4C8E8BACDE3F1349 /* CloudTagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CloudTagView.swift; sourceTree = "<group>"; };
 		A1EE687FF3A37C00C87F74A5B14FBABD /* Pods-CloudTagView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudTagView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		ABF6AC623DEE386AE6F876E7E4A31BB6 /* CloudTagView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CloudTagView.modulemap; sourceTree = "<group>"; };
 		B052565B033D24319F224B182EE114B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudTagView.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAF5888673A99DE01C2154E64A4EBAF6 /* Pods-CloudTagView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudTagView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BD8CAE3532BC9AF5040775E67B4E2FA3 /* CloudTagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CloudTagView.swift; sourceTree = "<group>"; };
 		C330484E93376F671B4A7519880D0B3D /* Pods_CloudTagView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudTagView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FCC4218DACED30062F3E583438581E /* CloudTagView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CloudTagView-dummy.m"; sourceTree = "<group>"; };
+		D6B18B2BF641C7098B71268CD9E62002 /* CloudTagView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudTagView-umbrella.h"; sourceTree = "<group>"; };
 		E95320A58DE1C064B99B464334E3FA42 /* Pods-CloudTagView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudTagView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		250E896CFC2FBF6FF86CD0E8366C8016 /* Frameworks */ = {
+		0480080692252ECF5088499F033EC1A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47B537AF9E3C0520D47311D3B74A02A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184C0611936A82099964050A4AA320B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332CB5853BBAB890DEE8FE775A315DB4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,13 +103,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65F2DBB1C292AD4606A8F34ADF2E6D6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61A477E1A46CD617EA533A47477C89BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,27 +117,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26D7B2169142A86CB8CA87D80C18D659 /* Classes */ = {
+		18D1381B3DE3C5A4EB9D0D358B3FF348 /* CloudTagView */ = {
 			isa = PBXGroup;
 			children = (
-				BD8CAE3532BC9AF5040775E67B4E2FA3 /* CloudTagView.swift */,
-				2DA7462A1C58FD03009B0EC4 /* Media.xcassets */,
+				2498548603CCDB97ED3D59911E043FF9 /* Pod */,
+				C93398B0E4975C9761D89E611483F6D6 /* Resources */,
+				5ED0D403E7EAC60EBA7024AD23B4D8AB /* Support Files */,
 			);
-			path = Classes;
+			name = CloudTagView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		4687E99B94D04421232D708838765AD2 /* Support Files */ = {
+		2498548603CCDB97ED3D59911E043FF9 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7930014E8C3E48419E6C0D03382DCE0B /* CloudTagView.modulemap */,
-				42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */,
-				6678CBEBE78AF5DD994D0497CAFEC3E9 /* CloudTagView-dummy.m */,
-				61D79B9C56E826949EF151B92D73142E /* CloudTagView-prefix.pch */,
-				9FAF40CB1A052DFB9698C4BABC788860 /* CloudTagView-umbrella.h */,
-				6CF6275887AFA94E8680AB8F7825485A /* Info.plist */,
+				33309E6DA27C551436F6B20118F3CB2F /* Classes */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CloudTagView";
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		33309E6DA27C551436F6B20118F3CB2F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				99218D9DC27409FC4C8E8BACDE3F1349 /* CloudTagView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		55C355C3699A1A8F823FC6A9BD9C1A6B /* Pods-CloudTagView_Tests */ = {
@@ -158,12 +162,26 @@
 			path = "Target Support Files/Pods-CloudTagView_Tests";
 			sourceTree = "<group>";
 		};
-		62BB52A5C94B87F11BB17D16D001013B /* Development Pods */ = {
+		5ED0D403E7EAC60EBA7024AD23B4D8AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF25BBE5E7F76776E4D2079B38E617E8 /* CloudTagView */,
+				ABF6AC623DEE386AE6F876E7E4A31BB6 /* CloudTagView.modulemap */,
+				B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */,
+				D1FCC4218DACED30062F3E583438581E /* CloudTagView-dummy.m */,
+				2CFE0B3F42792F69B1DE6C50821E079A /* CloudTagView-prefix.pch */,
+				D6B18B2BF641C7098B71268CD9E62002 /* CloudTagView-umbrella.h */,
+				494CA6BE019D6275FD0D8F3FC2F6FC91 /* Info.plist */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CloudTagView";
+			sourceTree = "<group>";
+		};
+		606C016BC306A4C76C00DC35386CA378 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2626F371F148BF573AB55FAE556B620F /* Media.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		778AED435623CF6D627BD4013287A53D /* Pods-CloudTagView_Example */ = {
@@ -188,19 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				62BB52A5C94B87F11BB17D16D001013B /* Development Pods */,
+				FA45AB67DD1D4057343EEB61E4DE95C7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				F1C8F71485D5608DA8DABF309E3AE775 /* Products */,
 				A26AB5B72015C28768332281A4BEFBCC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8D6ACE991C6BD968D1355EDE5D08E228 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				26D7B2169142A86CB8CA87D80C18D659 /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 		A26AB5B72015C28768332281A4BEFBCC /* Targets Support Files */ = {
@@ -210,16 +220,6 @@
 				55C355C3699A1A8F823FC6A9BD9C1A6B /* Pods-CloudTagView_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AF25BBE5E7F76776E4D2079B38E617E8 /* CloudTagView */ = {
-			isa = PBXGroup;
-			children = (
-				8D6ACE991C6BD968D1355EDE5D08E228 /* Pod */,
-				4687E99B94D04421232D708838765AD2 /* Support Files */,
-			);
-			name = CloudTagView;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -238,6 +238,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C93398B0E4975C9761D89E611483F6D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6DCCC16C3C437EAE950592F185AA38D /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E6DCCC16C3C437EAE950592F185AA38D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				606C016BC306A4C76C00DC35386CA378 /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		F1C8F71485D5608DA8DABF309E3AE775 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +263,14 @@
 				2D02194752DA32AC9CF19FD547465984 /* Pods_CloudTagView_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FA45AB67DD1D4057343EEB61E4DE95C7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18D1381B3DE3C5A4EB9D0D358B3FF348 /* CloudTagView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +284,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F85BA3503461095291CD6B2C9EE84A7 /* Headers */ = {
+		EB95F86CF8C6BB41FF811A2382694ACF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAC6288D81CFD9125EF0E26239B9786 /* CloudTagView-umbrella.h in Headers */,
+				895895B2E9DAE90C6E3B39E5CE900FEF /* CloudTagView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,19 +321,19 @@
 			productReference = 2D02194752DA32AC9CF19FD547465984 /* Pods_CloudTagView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7FC858EF2772BBF7DE1DA525057611C9 /* CloudTagView */ = {
+		43BC3D4FFE8A835F4B2C5B2F4AE3472D /* CloudTagView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD5C0F60FD3FCB708944339488FF764 /* Build configuration list for PBXNativeTarget "CloudTagView" */;
+			buildConfigurationList = 7708C3897C0BB4B64B50B8BB05EDEC02 /* Build configuration list for PBXNativeTarget "CloudTagView" */;
 			buildPhases = (
-				87D6420C6990919F338FE89A3AFC8592 /* Sources */,
-				250E896CFC2FBF6FF86CD0E8366C8016 /* Frameworks */,
-				955688BDE731D4B23F310CDA8A813C6F /* Resources */,
-				6F85BA3503461095291CD6B2C9EE84A7 /* Headers */,
+				DFF707815D723FD11EAB59B0C216C938 /* Sources */,
+				184C0611936A82099964050A4AA320B8 /* Frameworks */,
+				B4313673245896D1F9EC21BEBC0FE9B9 /* Resources */,
+				EB95F86CF8C6BB41FF811A2382694ACF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7350316CB9D3D713410BA53C25B6F133 /* PBXTargetDependency */,
+				C2E857CF6A9E4C3F0D75BB78ED8E580B /* PBXTargetDependency */,
 			);
 			name = CloudTagView;
 			productName = CloudTagView;
@@ -334,13 +358,13 @@
 			productReference = C330484E93376F671B4A7519880D0B3D /* Pods_CloudTagView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B4CFBBA61AB7603AB2B9DEE538695FA9 /* CloudTagView-CloudTagView */ = {
+		EB54F84A6C814CAEDB71E34CF9F8C18E /* CloudTagView-CloudTagView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEE0EB73B3421D30D55D0AFB12FBED9 /* Build configuration list for PBXNativeTarget "CloudTagView-CloudTagView" */;
+			buildConfigurationList = 8860D14192E3E5E76E7C84B14C907B6A /* Build configuration list for PBXNativeTarget "CloudTagView-CloudTagView" */;
 			buildPhases = (
-				75D9883600AEC188258ED8C39DFD09DB /* Sources */,
-				61A477E1A46CD617EA533A47477C89BA /* Frameworks */,
-				4CCE98E576910271381821BEF64A9F8F /* Resources */,
+				C3C2EC7B4B0288081A4661FBDAD61B19 /* Sources */,
+				0480080692252ECF5088499F033EC1A9 /* Frameworks */,
+				09B22F4CCF768D40F33FB806089EA666 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -372,8 +396,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FC858EF2772BBF7DE1DA525057611C9 /* CloudTagView */,
-				B4CFBBA61AB7603AB2B9DEE538695FA9 /* CloudTagView-CloudTagView */,
+				43BC3D4FFE8A835F4B2C5B2F4AE3472D /* CloudTagView */,
+				EB54F84A6C814CAEDB71E34CF9F8C18E /* CloudTagView-CloudTagView */,
 				9FB35B435EB51E8A8EF603F8358DA64E /* Pods-CloudTagView_Example */,
 				09D967ABA7CD2E7D45094F7ED938269C /* Pods-CloudTagView_Tests */,
 			);
@@ -381,19 +405,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4CCE98E576910271381821BEF64A9F8F /* Resources */ = {
+		09B22F4CCF768D40F33FB806089EA666 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		955688BDE731D4B23F310CDA8A813C6F /* Resources */ = {
+		B4313673245896D1F9EC21BEBC0FE9B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA7462B1C58FD03009B0EC4 /* Media.xcassets in Resources */,
-				9ADF3DCB1A227543F79E4595EFC19DF4 /* CloudTagView.bundle in Resources */,
+				95AF7FD768ECD8B3F99C1B52C69D0A12 /* CloudTagView.bundle in Resources */,
+				1DE5A3E3BB7EFCE1B6C515A036FFD4E2 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,41 +440,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75D9883600AEC188258ED8C39DFD09DB /* Sources */ = {
+		C3C2EC7B4B0288081A4661FBDAD61B19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87D6420C6990919F338FE89A3AFC8592 /* Sources */ = {
+		DFF707815D723FD11EAB59B0C216C938 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5009CFFBBA46E1E38027F4B36A8E49F3 /* CloudTagView-dummy.m in Sources */,
-				2C2961EC0C46F0D752AB5A49DE9CAD07 /* CloudTagView.swift in Sources */,
+				ED5EC5BE59562E245B835DD948285677 /* CloudTagView-dummy.m in Sources */,
+				8405D40D9220597B8F955CB2A405CD54 /* CloudTagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7350316CB9D3D713410BA53C25B6F133 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CloudTagView-CloudTagView";
-			target = B4CFBBA61AB7603AB2B9DEE538695FA9 /* CloudTagView-CloudTagView */;
-			targetProxy = 4B03DB663A003199E5A4954987AF4A0E /* PBXContainerItemProxy */;
-		};
 		B850533BDB1BA553C7CEBE9C09B10826 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CloudTagView;
-			target = 7FC858EF2772BBF7DE1DA525057611C9 /* CloudTagView */;
+			target = 43BC3D4FFE8A835F4B2C5B2F4AE3472D /* CloudTagView */;
 			targetProxy = 4CCEEFD4CE523415727C8EB76C328DF8 /* PBXContainerItemProxy */;
+		};
+		C2E857CF6A9E4C3F0D75BB78ED8E580B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CloudTagView-CloudTagView";
+			target = EB54F84A6C814CAEDB71E34CF9F8C18E /* CloudTagView-CloudTagView */;
+			targetProxy = C1A4DBB8029C3D6A9A3E043B145DE4BB /* PBXContainerItemProxy */;
 		};
 		D781DF686B9AA566DB403F303403FCBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CloudTagView;
-			target = 7FC858EF2772BBF7DE1DA525057611C9 /* CloudTagView */;
+			target = 43BC3D4FFE8A835F4B2C5B2F4AE3472D /* CloudTagView */;
 			targetProxy = D92B44028F1730ADBC9946362B8C9D79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -490,30 +514,15 @@
 			};
 			name = Release;
 		};
-		24D524F1FCC7BAFEFF9EAF93D4226BEB /* Release */ = {
+		23BB633FC3A758C52E6847093EBD1384 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */;
+			baseConfigurationReference = B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CloudTagView/CloudTagView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CloudTagView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CloudTagView/CloudTagView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CloudTagView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -587,9 +596,9 @@
 			};
 			name = Debug;
 		};
-		5664588F7BF28C4EBD72E2EE3B1C6029 /* Debug */ = {
+		A3F24B59164E18B6BBF8DDA789605845 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */;
+			baseConfigurationReference = B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -604,40 +613,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CloudTagView/CloudTagView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CloudTagView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		6282C7A5245B9AE40320C77DEC46710E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = CloudTagView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
 			name = Release;
-		};
-		9712CE9289D418E5B0CEC4D5B2948A25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42AE7BC002AA0E4081661EF801D2FBAD /* CloudTagView.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = CloudTagView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		B5DDDC172CA966EB1061AA375C5C1A69 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -730,18 +714,49 @@
 			};
 			name = Debug;
 		};
+		EB5DB6FCE017E889AD58B574D0B69E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CloudTagView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F842B3741DBC8B4B7CBFBA59BE92182B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32902241C016D83235C582CADBA9A89 /* CloudTagView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CloudTagView/CloudTagView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CloudTagView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CloudTagView/CloudTagView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CloudTagView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEE0EB73B3421D30D55D0AFB12FBED9 /* Build configuration list for PBXNativeTarget "CloudTagView-CloudTagView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9712CE9289D418E5B0CEC4D5B2948A25 /* Debug */,
-				6282C7A5245B9AE40320C77DEC46710E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -751,20 +766,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD5C0F60FD3FCB708944339488FF764 /* Build configuration list for PBXNativeTarget "CloudTagView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5664588F7BF28C4EBD72E2EE3B1C6029 /* Debug */,
-				24D524F1FCC7BAFEFF9EAF93D4226BEB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		56FA78651EE1A78EE27DBD674DEDE863 /* Build configuration list for PBXNativeTarget "Pods-CloudTagView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FF8986128EEA2BF978FB11C83158F81 /* Debug */,
 				C4AF65E35A7CDB6B344B3AB9DE445E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7708C3897C0BB4B64B50B8BB05EDEC02 /* Build configuration list for PBXNativeTarget "CloudTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F842B3741DBC8B4B7CBFBA59BE92182B /* Debug */,
+				A3F24B59164E18B6BBF8DDA789605845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8860D14192E3E5E76E7C84B14C907B6A /* Build configuration list for PBXNativeTarget "CloudTagView-CloudTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5DB6FCE017E889AD58B574D0B69E61 /* Debug */,
+				23BB633FC3A758C52E6847093EBD1384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
