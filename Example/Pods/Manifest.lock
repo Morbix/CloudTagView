@@ -1,0 +1,14 @@
+PODS:
+  - CloudTagView (0.1.0)
+
+DEPENDENCIES:
+  - CloudTagView (from `../`)
+
+EXTERNAL SOURCES:
+  CloudTagView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CloudTagView: 8c518595dd71bc36ebd372a8802269ed12471861
+
+COCOAPODS: 0.39.0

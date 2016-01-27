@@ -1,0 +1,6 @@
+framework module CloudTagView {
+  umbrella header "CloudTagView-umbrella.h"
+
+  export *
+  module * { export * }
+}

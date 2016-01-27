@@ -1,0 +1,6 @@
+framework module Pods_CloudTagView_Tests {
+  umbrella header "Pods-CloudTagView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
