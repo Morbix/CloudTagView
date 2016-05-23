@@ -177,6 +177,7 @@ public class TagView: UIView {
         textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "labelTapped"))
         
         self.text = text
+        self.layoutSubviews()
     }
     
     public override func layoutSubviews() {
