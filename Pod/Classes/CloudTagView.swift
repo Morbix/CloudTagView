@@ -15,12 +15,12 @@ public class CloudTagView: UIView {
     public var removeOnDismiss = true
     public var resizeToFit = true
     
-    public var tags = [TagView](){
+    public var tags = [TagView]() {
         didSet {
             layoutSubviews()
         }
     }
-    public var padding = 5{
+    public var padding = 5 {
         didSet {
             layoutSubviews()
         }
@@ -90,11 +90,12 @@ public class CloudTagView: UIView {
     
     // MARK: Methods
     
-    private func setMaxLengthIfNeededIn(tag tag: TagView){
+    private func setMaxLengthIfNeededIn(tag tag: TagView) {
         if maxLengthPerTag > 0 && tag.maxLength != maxLengthPerTag {
             tag.maxLength = maxLengthPerTag
         }
     }
+    
 }
 
 public class TagView: UIView {
@@ -132,7 +133,6 @@ public class TagView: UIView {
     private let textLabel : UILabel
     
     public override init(frame: CGRect) {
-        
         dismissView = UIView()
         icon = UIImageView()
         textLabel = UILabel()
@@ -148,16 +148,15 @@ public class TagView: UIView {
         dismissView.userInteractionEnabled = true
         textLabel.userInteractionEnabled = true
         
-        dismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "iconTapped"))
-        textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "labelTapped"))
+        dismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.iconTapped)))
+        textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.labelTapped)))
     }
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public init(text: String){
-        
+    public init(text: String) {
         dismissView = UIView()
         icon = UIImageView()
         textLabel = UILabel()
@@ -173,8 +172,8 @@ public class TagView: UIView {
         dismissView.userInteractionEnabled = true
         textLabel.userInteractionEnabled = true
         
-        dismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "iconTapped"))
-        textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "labelTapped"))
+        dismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.iconTapped)))
+        textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.labelTapped)))
         
         self.text = text
         self.layoutSubviews()
@@ -219,16 +218,21 @@ public class TagView: UIView {
     func labelTapped(){
         delegate?.tagTouched?(self)
     }
+    
 }
 
 // MARK: TagViewDelegate
 
 @objc public protocol TagViewDelegate {
+    
     optional func tagTouched(tag : TagView)
+    
     optional func tagDismissed(tag: TagView)
+    
 }
 
 extension CloudTagView : TagViewDelegate {
+    
     public func tagDismissed(tag: TagView) {
         delegate?.tagDismissed?(tag)
         
@@ -242,4 +246,5 @@ extension CloudTagView : TagViewDelegate {
     public func tagTouched(tag: TagView) {
         delegate?.tagTouched?(tag)
     }
+    
 }
