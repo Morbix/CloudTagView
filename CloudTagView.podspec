@@ -32,9 +32,9 @@ This class helps you to create a simple cloud of tags based on Strings. You can 
 
   s.resources = 'Pod/Assets/Media.xcassets'
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'CloudTagView' => ['Pod/Assets/*.png']
-  }
+# s.resource_bundles = {
+#  'CloudTagView' => ['Pod/Assets/*.png']
+# }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
