@@ -184,7 +184,15 @@ public class TagView: UIView {
         icon.image = iconImage?.imageWithRenderingMode(.AlwaysTemplate)
         icon.tintColor = UIColor.whiteColor()
         
-        let textLeft = marginLeft + Int(icon.frame.width ?? 0) + marginLeft/2
+        let textLeft: Int
+        
+        if let _ = icon.image {
+            dismissView.userInteractionEnabled = true
+            textLeft = marginLeft + Int(icon.frame.width ?? 0) + marginLeft/2
+        } else {
+            dismissView.userInteractionEnabled = false
+            textLeft = marginLeft
+        }
         
         textLabel.frame = CGRect(x: textLeft, y: marginTop, width: 100, height: 20)
         textLabel.backgroundColor = UIColor(white: 0, alpha: 0.0)

@@ -55,6 +55,10 @@ class ViewController: UIViewController {
         
         let otherNormalTag = TagView(text: "other normal tag")
         cloudView.tags.append(otherNormalTag)
+        
+        let noIconTag = TagView(text: "tag without dismiss icon")
+        noIconTag.iconImage = nil
+        cloudView.tags.append(noIconTag)
     }
     
     // MARK: Actions
