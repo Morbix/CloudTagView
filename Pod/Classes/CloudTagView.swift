@@ -128,6 +128,18 @@ public class TagView: UIView {
         }
     }
     
+    override public var backgroundColor: UIColor? {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
+    override public var tintColor: UIColor? {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
     private let dismissView : UIView
     private let icon : UIImageView
     private let textLabel : UILabel
@@ -138,7 +150,7 @@ public class TagView: UIView {
         textLabel = UILabel()
         
         super.init(frame: frame)
-        
+
         userInteractionEnabled = true
         
         addSubview(textLabel)
@@ -150,6 +162,9 @@ public class TagView: UIView {
         
         dismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.iconTapped)))
         textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.labelTapped)))
+        
+        backgroundColor = UIColor(white: 0.0, alpha: 0.6)
+        tintColor = UIColor.whiteColor()
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -176,13 +191,15 @@ public class TagView: UIView {
         textLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TagView.labelTapped)))
         
         self.text = text
-        self.layoutSubviews()
+        
+        backgroundColor = UIColor(white: 0.0, alpha: 0.6)
+        tintColor = UIColor.whiteColor()
     }
     
     public override func layoutSubviews() {
         icon.frame = CGRect(x: marginLeft, y: marginTop+4, width: 8, height: 8)
         icon.image = iconImage?.imageWithRenderingMode(.AlwaysTemplate)
-        icon.tintColor = UIColor.whiteColor()
+        icon.tintColor = tintColor
         
         let textLeft: Int
         
@@ -203,7 +220,7 @@ public class TagView: UIView {
         }
         textLabel.textAlignment = .Center
         textLabel.font = UIFont.systemFontOfSize(12)
-        textLabel.textColor = UIColor.whiteColor()
+        textLabel.textColor = tintColor
         textLabel.sizeToFit()
         
         let tagHeight = Int(max(textLabel.frame.height,14)) + marginTop*2
@@ -213,7 +230,6 @@ public class TagView: UIView {
         dismissView.frame = CGRect(x: 0, y: 0, width: dismissLeft, height: tagHeight)
         
         frame = CGRect(x: Int(frame.origin.x), y: Int(frame.origin.y), width: tagWidth, height: tagHeight)
-        backgroundColor = UIColor(white: 0.0, alpha: 0.6)
         layer.cornerRadius = bounds.height/2
     }
     

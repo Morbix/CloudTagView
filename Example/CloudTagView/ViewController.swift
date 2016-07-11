@@ -59,6 +59,14 @@ class ViewController: UIViewController {
         let noIconTag = TagView(text: "tag without dismiss icon")
         noIconTag.iconImage = nil
         cloudView.tags.append(noIconTag)
+        
+        let coloredTag = TagView(text: "colored tag")
+        coloredTag.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.6)
+        cloudView.tags.append(coloredTag)
+        
+        let tintColorTag = TagView(text: "tint color tag")
+        tintColorTag.tintColor = UIColor.yellowColor()
+        cloudView.tags.append(tintColorTag)
     }
     
     // MARK: Actions
