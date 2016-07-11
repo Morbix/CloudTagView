@@ -53,12 +53,12 @@ class ViewController: UIViewController {
         trimmedTag.maxLength = 15
         cloudView.tags.append(trimmedTag)
         
-        let otherNormalTag = TagView(text: "other normal tag")
-        cloudView.tags.append(otherNormalTag)
-        
         let noIconTag = TagView(text: "tag without dismiss icon")
         noIconTag.iconImage = nil
         cloudView.tags.append(noIconTag)
+        
+        let otherNormalTag = TagView(text: "other normal tag")
+        cloudView.tags.append(otherNormalTag)
         
         let coloredTag = TagView(text: "colored tag")
         coloredTag.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.6)
