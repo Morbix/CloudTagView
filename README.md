@@ -38,19 +38,19 @@ import CloudTagView
 class ViewController: UIViewController {
 
     let cloudView = CloudTagView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         cloudView.frame = CGRectMake(0, 20, view.frame.width, 10)
         view.addSubview(cloudView)
-        
+
         addingTags()
     }
 
     func addingTags() {
         let normalTags = ["This", "is", "a", "example", "of", "Cloud", "Tag", "View"]
-        
+
         for s in normalTags {
             cloudView.tags.append(TagView(text: s))
         }
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 }
 ```
 
-<p align="center"><img src ="https://github.com/Morbix/CloudTagView/raw/master/Screenshot2.png" /></p>
+<p align="center"><img src ="https://github.com/Morbix/CloudTagView/raw/master/Screenshot3.png" /></p>
 
 ## Author
 
