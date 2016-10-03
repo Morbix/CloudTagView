@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cloudView.frame = CGRectMake(0, 20, view.frame.width, 10)
+        cloudView.frame = CGRect(x: 0, y: 20, width: view.frame.width, height: 10)
         cloudView.delegate = self
 
         view.addSubview(cloudView)
@@ -65,31 +65,31 @@ class ViewController: UIViewController {
         cloudView.tags.append(differentFontTag)
         
         let coloredTag = TagView(text: "colored tag")
-        coloredTag.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.6)
+        coloredTag.backgroundColor = UIColor.blue.withAlphaComponent(0.6)
         cloudView.tags.append(coloredTag)
 
         let tintColorTag = TagView(text: "tint color tag")
-        tintColorTag.tintColor = UIColor.yellowColor()
+        tintColorTag.tintColor = UIColor.yellow
         cloudView.tags.append(tintColorTag)
     }
 
     // MARK: Actions
 
-    @IBAction func clearAllTouched(sender: AnyObject) {
+    @IBAction func clearAllTouched(_ sender: AnyObject) {
         cloudView.tags.removeAll()
     }
 
-    @IBAction func addTouched(sender: AnyObject) {
+    @IBAction func addTouched(_ sender: AnyObject) {
         cloudView.tags.append(TagView(text: addTextField.text!))
     }
 }
 
 extension ViewController : TagViewDelegate {
-    func tagDismissed(tag: TagView) {
+    func tagDismissed(_ tag: TagView) {
         print("tag dismissed: " + tag.text)
     }
 
-    func tagTouched(tag: TagView) {
+    func tagTouched(_ tag: TagView) {
         print("tag touched: " + tag.text)
     }
 }
