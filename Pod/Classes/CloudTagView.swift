@@ -8,24 +8,24 @@
 
 import UIKit
 
-public class CloudTagView: UIView {
+open class CloudTagView: UIView {
     
-    public weak var delegate : TagViewDelegate?
+    open weak var delegate : TagViewDelegate?
     
-    public var removeOnDismiss = true
-    public var resizeToFit = true
+    open var removeOnDismiss = true
+    open var resizeToFit = true
     
-    public var tags = [TagView]() {
+    open var tags = [TagView]() {
         didSet {
             layoutSubviews()
         }
     }
-    public var padding = 5 {
+    open var padding = 5 {
         didSet {
             layoutSubviews()
         }
     }
-    public var maxLengthPerTag = 0 {
+    open var maxLengthPerTag = 0 {
         didSet {
             layoutSubviews()
         }
@@ -45,7 +45,7 @@ public class CloudTagView: UIView {
         clipsToBounds = true
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         for tag in subviews {
             tag.removeFromSuperview()
         }
@@ -56,7 +56,7 @@ public class CloudTagView: UIView {
         
         for (index, tag) in tags.enumerated() {
             
-            setMaxLengthIfNeededIn(tag: tag)
+            setMaxLengthIfNeededIn(tag)
             
             tag.delegate = self
             
@@ -90,7 +90,7 @@ public class CloudTagView: UIView {
     
     // MARK: Methods
     
-    private func setMaxLengthIfNeededIn(tag: TagView) {
+    fileprivate func setMaxLengthIfNeededIn(_ tag: TagView) {
         if maxLengthPerTag > 0 && tag.maxLength != maxLengthPerTag {
             tag.maxLength = maxLengthPerTag
         }
@@ -98,57 +98,57 @@ public class CloudTagView: UIView {
     
 }
 
-public class TagView: UIView {
+open class TagView: UIView {
     
-    public weak var delegate : TagViewDelegate?
+    open weak var delegate : TagViewDelegate?
     
-    public var text = "" {
+    open var text = "" {
         didSet {
             layoutSubviews()
         }
     }
-    public var marginTop = 5 {
+    open var marginTop = 5 {
         didSet {
             layoutSubviews()
         }
     }
-    public var marginLeft = 10 {
+    open var marginLeft = 10 {
         didSet {
             layoutSubviews()
         }
     }
-    public var iconImage = UIImage(named: "close_tag_2", in: Bundle(for: CloudTagView.self), compatibleWith: nil) {
+    open var iconImage = UIImage(named: "close_tag_2", in: Bundle(for: CloudTagView.self), compatibleWith: nil) {
         didSet {
             layoutSubviews()
         }
     }
-    public var maxLength = 0 {
-        didSet {
-            layoutSubviews()
-        }
-    }
-    
-    override public var backgroundColor: UIColor? {
+    open var maxLength = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    override public var tintColor: UIColor? {
+    override open var backgroundColor: UIColor? {
         didSet {
             layoutSubviews()
         }
     }
     
-    public var font: UIFont = UIFont.systemFont(ofSize: 12) {
+    override open var tintColor: UIColor? {
         didSet {
             layoutSubviews()
         }
     }
     
-    private let dismissView : UIView
-    private let icon : UIImageView
-    private let textLabel : UILabel
+    open var font: UIFont = UIFont.systemFont(ofSize: 12) {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
+    fileprivate let dismissView : UIView
+    fileprivate let icon : UIImageView
+    fileprivate let textLabel : UILabel
     
     public override init(frame: CGRect) {
         dismissView = UIView()
@@ -202,7 +202,7 @@ public class TagView: UIView {
         tintColor = UIColor.white
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         icon.frame = CGRect(x: marginLeft, y: marginTop+4, width: 8, height: 8)
         icon.image = iconImage?.withRenderingMode(.alwaysTemplate)
         icon.tintColor = tintColor
@@ -242,11 +242,11 @@ public class TagView: UIView {
     // MARK: Actions
     
     func iconTapped(){
-        delegate?.tagDismissed?(tag: self)
+        delegate?.tagDismissed?(self)
     }
     
     func labelTapped(){
-        delegate?.tagTouched?(tag: self)
+        delegate?.tagTouched?(self)
     }
     
 }
@@ -255,16 +255,16 @@ public class TagView: UIView {
 
 @objc public protocol TagViewDelegate {
     
-    @objc optional func tagTouched(tag : TagView)
+    @objc optional func tagTouched(_ tag : TagView)
     
-    @objc optional func tagDismissed(tag: TagView)
+    @objc optional func tagDismissed(_ tag: TagView)
     
 }
 
 extension CloudTagView : TagViewDelegate {
     
-    public func tagDismissed(tag: TagView) {
-        delegate?.tagDismissed?(tag: tag)
+    public func tagDismissed(_ tag: TagView) {
+        delegate?.tagDismissed?(tag)
         
         if removeOnDismiss {
             if let index = tags.index(of: tag) {
@@ -273,8 +273,8 @@ extension CloudTagView : TagViewDelegate {
         }
     }
     
-    public func tagTouched(tag: TagView) {
-        delegate?.tagTouched?(tag: tag)
+    public func tagTouched(_ tag: TagView) {
+        delegate?.tagTouched?(tag)
     }
     
 }
