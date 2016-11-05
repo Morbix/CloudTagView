@@ -3,14 +3,21 @@
 [![Version](https://img.shields.io/cocoapods/v/CloudTagView.svg?style=flat)](http://cocoapods.org/pods/CloudTagView)
 [![License](https://img.shields.io/cocoapods/l/CloudTagView.svg?style=flat)](http://cocoapods.org/pods/CloudTagView)
 [![Platform](https://img.shields.io/cocoapods/p/CloudTagView.svg?style=flat)](http://cocoapods.org/pods/CloudTagView)
+[![Swift 3](https://img.shields.io/badge/Swift-3.0-brightgreen.svg)](https://swift.org)
 
 This Pod helps you to create a simple cloud of tags based on Strings. You can manipulate the text, the padding and you can use the tintColor to modify the tag color. There are two delegates to handle taps in the tag: close icon and tag touch. You can access the example project for more details or contacting me.
 
 ## Requirements
 
-It requires Xcode 7.0+ and Swift 2.0.
+It requires Xcode 8.0+ and Swift 3.0.
 
 Your project deployment target must be `iOS 8.0+`
+
+For Swift 2.x support, use version `1.1.0`
+
+```ruby
+pod 'CloudTagView', '1.1.0'
+```
 
 ## Usage
 
