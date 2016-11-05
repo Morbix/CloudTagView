@@ -15,9 +15,6 @@ Your project deployment target must be `iOS 8.0+`
 
 For Swift 2.x support, use version `1.1.0`
 
-```ruby
-pod 'CloudTagView', '1.1.0'
-```
 
 ## Usage
 
@@ -29,7 +26,7 @@ CloudTagView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CloudTagView"
+pod 'CloudTagView'
 ```
 
 ## Usage
