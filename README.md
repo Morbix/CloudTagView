@@ -113,6 +113,18 @@ let tintColorTag = TagView(text: "tint color tag")
 tintColorTag.tintColor = UIColor.yellow
 ```
 
+## TagViewDelegate
+
+##### Dismiss Event
+```swift
+func tagDismissed(_ tag: TagView)
+```
+
+##### Touch Event
+```swift
+func tagTouched(_ tag: TagView)
+```
+
 ## Author
 
 Henrique Morbin, morbin_@hotmail.com
