@@ -64,6 +64,55 @@ class ViewController: UIViewController {
 
 <p align="center"><img src ="https://github.com/Morbix/CloudTagView/raw/master/Screenshot3.png" /></p>
 
+## Other tags
+
+##### Normal
+```swift
+let normalTag = TagView(text: "normal tag")
+```
+
+##### Fat
+```swift
+let fatTag = TagView(text: "fat tag")
+fatTag.marginTop = 20
+```
+
+##### Long
+```swift
+let longTag = TagView(text: "stretched tag")
+longTag.marginLeft = 40
+```
+
+#####  Trimmed
+```swift
+let trimmedTag = TagView(text: "Trimmed: This tag is a example of tag with a huge text.")
+trimmedTag.maxLength = 15
+```
+
+##### Without Icon
+```swift
+let withoutIconTag = TagView(text: "tag without dismiss icon")
+withoutIconTag.iconImage = nil
+```
+
+##### Custom Font
+```swift
+let customFontTag = TagView(text: "different font tag")
+customFontTag.font = UIFont(name: "Baskerville", size: 12)!
+```
+
+##### Custom Background Color
+```swift
+let coloredTag = TagView(text: "colored tag")
+coloredTag.backgroundColor = UIColor.blue.withAlphaComponent(0.6)
+```
+
+##### Custom Tint Color
+```swift
+let tintColorTag = TagView(text: "tint color tag")
+tintColorTag.tintColor = UIColor.yellow
+```
+
 ## Author
 
 Henrique Morbin, morbin_@hotmail.com
