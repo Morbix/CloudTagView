@@ -35,8 +35,8 @@ pod 'CloudTagView'
 Just `import CloudTagView` and create a instance of `CloudTagView`. **Works with Storyboard too**
 
 And append instancies of `TagView` inside the cloud.
-```swift
 
+```swift
 import CloudTagView
 
 class ViewController: UIViewController {
@@ -46,17 +46,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cloudView.frame = CGRectMake(0, 20, view.frame.width, 10)
+        cloudView.frame = CGRect(x: 0, y: 20, width: view.frame.width, height: 10)
         view.addSubview(cloudView)
 
-        addingTags()
+        setupTags()
     }
 
-    func addingTags() {
-        let normalTags = ["This", "is", "a", "example", "of", "Cloud", "Tag", "View"]
+    fileprivate func setupTags() {
+        let tags = ["This", "is", "a", "example", "of", "Cloud", "Tag", "View"]
 
-        for s in normalTags {
-            cloudView.tags.append(TagView(text: s))
+        for tag in tags {
+            cloudView.tags.append(TagView(text: tag))
         }
     }
 }
