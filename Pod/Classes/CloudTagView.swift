@@ -11,6 +11,10 @@ import UIKit
 open class CloudTagView: UIView {
     
     open weak var delegate : TagViewDelegate?
+	
+	open override var intrinsicContentSize: CGSize {
+		return frame.size
+	}
     
     open var removeOnDismiss = true
     open var resizeToFit = true
