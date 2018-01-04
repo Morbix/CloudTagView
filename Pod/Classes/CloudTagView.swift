@@ -223,8 +223,8 @@ open class TagView: UIView {
         
         textLabel.frame = CGRect(x: textLeft, y: marginTop, width: 100, height: 20)
         textLabel.backgroundColor = UIColor(white: 0, alpha: 0.0)
-        if maxLength > 0 && text.characters.count > maxLength {
-            textLabel.text = (text as NSString).substring(to: maxLength)+"..."
+        if maxLength > 0 && text.count > maxLength {
+            textLabel.text = text.prefix(maxLength)+"..."
         }else{
             textLabel.text = text
         }
@@ -245,11 +245,11 @@ open class TagView: UIView {
     
     // MARK: Actions
     
-    func iconTapped(){
+    @objc func iconTapped(){
         delegate?.tagDismissed?(self)
     }
     
-    func labelTapped(){
+    @objc func labelTapped(){
         delegate?.tagTouched?(self)
     }
     
