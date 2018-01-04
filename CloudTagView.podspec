@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CloudTagView"
-  s.version          = "2.0.0"
+  s.version          = "3.0.0"
   s.summary          = "A custom view to create cloud of tags."
 
 # This description is used to generate tags and improve search results.
